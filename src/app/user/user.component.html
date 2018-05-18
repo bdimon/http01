@@ -1,0 +1,19 @@
+<div class="col s3">
+  <div class="card" appHover>
+    <div class="card-image">
+      <img src={{usr.img}}>
+      <span style = "text-align: center;"
+      [ngClass] = "{'marked': isMark}"
+      class="card-title">
+      {{usr.name | uppercase}}</span>
+    </div>
+    <div class="card-content">
+      <p>{{usr.geo | uppercase}}</p>
+    </div>
+    <div class="card-action">
+      <a
+      (click) = "onClick()" 
+      class="waves-effect waves-light btn">Отметить</a>
+    </div>
+  </div>
+</div>
