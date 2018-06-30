@@ -21,7 +21,7 @@ size = 8;
   }
 
   getData(): Observable<[any]> {
-    return this.http.get('http://randomuser.me/api/?inc=name,picture,location&results=' + this.size + '&nat=gb').pipe(map(data => {
+    return this.http.get('http://cors.io/?u=http://randomuser.me/api/?inc=name,picture,location&results=' + this.size + '&nat=gb').pipe(map(data => {
       const usersList = data['results'];
       return usersList.map((u: any) => {
           return {name: u.name.first + ' ' + u.name.last,
