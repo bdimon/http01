@@ -1,5 +1,5 @@
 # Http01
-
+This project is created for customizing and convert WebForMyself-lessons from Angular4 to Angular6.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
 ## Development server
